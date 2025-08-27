@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Белые тигры</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="h1">
+            <h1><a class="glav" href="">Tigris Alba</a></h1>
+        </div>
+        <div class="nav">
+            <a class="ssylka" href="">База знаний</a>
+            <a class="ssylka" href="">Генетика</a>
+            <a class="ssylka" href="">Галерея</a>
+            <a class="ssylka" href="">Источники</a>
+        </div>
+        <a class="git" href=""><img class="github" src="icons/outline.png">GitHub</a>
+    </header>
+    <main>
+        <article class="nachalo">
+            <div class="txt">
+                <div class="obl">
+                    <div class="d1">Учебный проект</div>
+                    <div class="d2">Портфолио</div>
+                </div>
+                <h2>Белые тигры: наука, история и генетика</h2>
+                <p class="inf">Наглядный сайт проект о белых тиграх: что это за фенотип, как он наследуется, где таких животных содержат и почему вокруг них идут споры</p>
+                <div class="btns">
+                    <a class="go" href=""><img class="b" src="icons/book.png">Начать изучение</a>
+                    <a class="cal" href=""><img class="c" src="icons/calculator.png">Калькулятор генетики</a>
+                </div>
+            </div>
+            <img class="tigr" src="images/caption.jpg">
+        </article>
+        <article class="raz">
+            <h3 class="zag1">Разделы сайта</h3>
+            <div class="blocks">
+                <a class="razds" href="">
+                    <img class="micons" src="icons/mortarboard.png">
+                    <div class="txt1">
+                        <h4>База знаний</h4>
+                        <p class="baz">Статьи простым языком: биология, генетика, история белых тигров.</p>
+                    </div>
+                </a>
+                <a class="razds" href="">
+                    <img class="micons" src="icons/dna.png">
+                    <div class="txt1">
+                        <h4>Генетика</h4>
+                        <p class="baz">Рецессивный ген окраса: наглядные схемы и симулятор наследования.</p>
+                    </div>
+                </a>
+                <a class="razds" href="">
+                    <img class="micons" src="icons/photo.png">
+                    <div class="txt1">
+                        <h4>Галерея</h4>
+                        <p class="baz">Карточки известных животных (например, Кенни) и подборки фото.</p>
+                    </div>
+                </a>
+                <a class="razds" href="">
+                    <img class="micons" src="icons/global-search.png">
+                    <div class="txt1">
+                        <h4>Источники</h4>
+                        <p class="baz">Научные статьи, книги, медиа и библиотеки с открытыми лицензиями</p>
+                    </div>
+                </a>
+            </div>
+        </article>
+        <article class="calculated">
+            <div class="gen">
+                <h3 class="wh">Генетика белого окраса</h3>
+                <p class="rec">Белая окраска у бенгальского тигра — результат рецессивного варианта гена (обозначим его как w). Чтобы детёныш родился белым (ww), он должен получить по одному рецессивному аллелю от каждого из родителей.</p>
+                <p class="rec1">WW — обычный окрас, не носитель.</p>
+                <p class="rec1">Ww — обычный окрас, носитель рецессивного аллеля.</p>
+                <p class="rec1">ww — белый тигр.</p>
+                <p class="warn"><img class="w" src="icons/exclamation.png">Модель — учебная визуализация на основе решётки Пеннета.</p>
+            </div>
+            <div class="container">
+                <section class="calc" aria-labelledby="calcTitle">
+                    <div class="calc__header"><img class="cart" src="icons/calculator.png"><h2 class="zago" id="calcTitle">Калькулятор вероятности</h2></div>
+                    <div class="grid">
+                        <div class="field">
+                            <label for="parentA">Родитель A</label>
+                            <select id="parentA" class="select">
+                                <option value="WW">WW — обычный (не носитель)</option>
+                                <option value="Ww" selected>Ww — обычный (носитель)</option>
+                                <option value="ww">ww — белый</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="parentB">Родитель B</label>
+                            <select id="parentB" class="select">
+                                <option value="WW">WW — обычный (не носитель)</option>
+                                <option value="Ww" selected>Ww — обычный (носитель)</option>
+                                <option value="ww">ww — белый</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="results" aria-live="polite">
+                        <div class="card">
+                            <div class="pill">WW</div>
+                            <div class="card__value" id="resWW">25%</div>
+                        </div>
+                        <div class="card">
+                            <div class="pill">Ww</div>
+                            <div class="card__value" id="resWw">50%</div>
+                        </div>
+                        <div class="card">
+                            <div class="pill">ww</div>
+                            <div class="card__value" id="resww">25%</div>
+                        </div>
+                    </div>
+                    <div class="summary">
+                        Вероятность белого потомства: <span id="whiteChance">25%</span>
+                    </div>
+                </section>
+            </div>
+        </article>
+        <article class="galery">
+            <h3 class="zag2">Галерея и кейсы</h3>
+            <div class="cartinki">
+                <a class="fkenny" href="">
+                    <img class="ckenny" src="images/kenny.jpg">
+                    <div class="txtk">
+                        <h3 class="zagk">Кенни — известный белый тигр</h3>
+                        <p class="tkenny">Белый тигр с необычной внешностью, ставший символом последствий инбридинга. Его история вызывает дискуссии об этике разведения и защите животных. Подробнее можно узнать в полном описании.</p>
+                        <p class="ist">Фото: https://www.techinsider.ru/</p>
+                    </div>
+                </a>
+                <a class="fkenny" href="">
+                    <img class="ckenny" src="images/51709178.jpg">
+                    <div class="txtk">
+                        <h3 class="zagk">Подборка: белые тигры в разных зоопарках</h3>
+                        <p class="tkenny">Редкие животные, которых разводят ради их окраса. Однако часто это сопровождается инбридингом и проблемами со здоровьем. Подробнее в полном описании.</p>
+                        <p class="ist">Фото: https://goodnewsanimal.ru/</p>
+                    </div>
+                </a>
+            </div>
+        </article>
+        <article class="myths">
+            <div class="me">
+                <h3 class="zag2">Мифы и факты</h3>
+                <div class="war">
+                    <p class="sss">Миф: белые тигры — отдельный подвид.</p>
+                    <p class="ss">Факт: это цветовая форма бенгальского тигра (рецессивный фенотип).</p>
+                </div>
+                <div class="war">
+                    <p class="sss">Миф: белые тигры всегда нездоровы.</p>
+                    <p class="ss">Факт: белый окрас сам по себе не равен болезни; риски повышает практика тесных скрещиваний в неволе.</p>
+                </div>
+                <div class="war">
+                    <p class="sss">Миф: «это редкий вид, значит надо разводить».</p>
+                    <p class="ss">Факт: сохранение подвидов и генетического разнообразия важнее коммерческой редкости окраса.</p>
+                </div>
+            </div>
+            <div class="me">
+                <h3 class="zag2">Этика и дискуссии</h3>
+                <div class="war">
+                    <p class="ss">Вокруг темы белых тигров уже давно идут споры и этические дискуссии, которые продолжаются и сегодня. Ниже собраны ссылки и материалы со взглядами СМИ, учёных, экологических активистов и представителей общественности.</p>
+                    <input type="checkbox" id="menu-toggle">
+                    <label for="menu-toggle" class="sm">Смотреть источники ↓</label>
+                    <div class="menu">
+                        <p class="ss1">1. Duke University Science & Society
+
+Статья «A Tiger By the Tail» затрагивает моральную дилемму, связанную с белыми тиграми:
+
+«Белые тигры привлекают большое внимание публики... но это внимание даётся ценой — ради появления белого тигра приходится разводить множество болезненных особей, поддерживая нечестных заводчиков... И обучение общества мифам — это плата за «экзотический трюк»?»
+
+2. Wild Welfare (зоозащитная организация)
+
+Чёткий этический выпад:
+
+«Белые тигры не служат никакой цели в сохранении вида и используются исключительно из-за «миловидности». Продолжение их разведения вводит публику в заблуждение и не помогает дикой популяции, число которой может быть всего ~2 500 зрелых особей.»
+
+3. The Hindu (индийское СМИ)
+
+Опыт Nehru Zoological Park вызвал тревогу у экспертов:
+
+Белые тигры, полученные в результате жесткого инбридинга, характеризуются нарушениями иммунитета и наследственностью с опухолями, сниженной продолжительностью жизни.
+
+Представители AZA и WAZA также выступают против их разведения.
+
+4. Scientific American
+
+Документально подтверждённые факты:
+
+Практика интенсивного инбридинга: родитель-на-дочь, брат-на-сестру.
+
+Более 80 % сильно инбредных тигрят умирают вскоре после рождения.
+
+Проблемы со здоровьем: уменьшенный размер выводка, короткий срок жизни, дефекты изгиба позвоночника, органов, зрения, иммунитета.
+
+AZA (Association of Zoos & Aquariums) с 2011 года официально запретила такое разведение.
+
+5. Big Cat Rescue
+
+Невыносимо жёсткое слово:
+
+«Разведение белых тигров — это аберрация, которую искусственно поддерживают зоопарки ради шоу. Это противоречит основам любых программ по сохранению видов. Ответственные действия по сохранению — это защита среды обитания, а не разведение 'дефектных' животных для развлечения.»
+
+6. Wildcat Sanctuary
+
+Самое жёсткое:
+
+«Это варварская практика, направленная исключительно на визуальную привлекательность: мать со своим сыном... ради желания публики ухватиться за эстетичный феномен, пренебрегая здоровьем. Это не консервация, а эксплуатация.»
+
+Общественное мнение и Reddit-дискуссии
+
+Ниже — выдержки живых обсуждений с Reddit, отражающие точки зрения обычных людей и энтузиастов:
+
+На r/YouShouldKnow:
+«Все белые тигры — инбред. Они гораздо чаще рождаются с расщелиной неба, искривлениями позвоночника, психическими нарушениями, косоглазием.»
+
+
+
+
+На r/AnimalRights:
+«Проблемы включают дисплазию тазобедренного сустава, глухоту, слепоту, неврологические расстройства, иммунную слабость... белый — это не модификация, а страдание.»
+
+
+
+
+На r/aww:
+«После белых тигрят в зоопарке — почти наверняка это коммерческое звероводство, жестокость под видом шоу. AZA запретил их разведение уже более десяти лет назад. Белая окраска считается генетическим заболеванием.»
+
+
+
+
+На r/evolution:
+Наблюдается более рассудительное обсуждение: «Белая окраска сама по себе не дефект, но может быть связана с неврологическими проблемами. Если белый тигр в дикой природе — генетически ценный, здоровый — возможно, стоит сохранить. Но инбридинга — ни в коем случае.»
+
+                        </p>
+                        <label for="menu-toggle" class="ss2">Скрыть ↑</label>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="material">
+            <h3 class="zag2">Источники и использование материалов</h3>
+            <div class="zae">
+                <div class="wa">
+                    <h4 class="text">Текст и графика</h4>
+                    <div>
+                        <p class="ss3">Тексты — авторские пересказы с указанием источников.</p>
+                        <p class="ss3">Диаграммы/таблицы — собственная визуализация на основе открытых данных.</p>
+                    </div>
+                </div>
+                <div class="wa">
+                    <h4 class="text">Для портфолио</h4>
+                    <div>
+                        <p class="ss3">Проект некоммерческий; указание авторов фото обязательно.</p>
+                        <p class="ss3">При необходимости спорные изображения можно позже заменить на фото с открытой лицензией.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p class="kon">© 2025 Tigris Alba — учебный проект.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
