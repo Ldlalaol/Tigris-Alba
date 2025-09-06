@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+}
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-track{
+    background: rgb(12, 12, 37);
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(40, 40, 56);
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: rgb(51, 51, 67);
+}
+:root{
+    --bg: rgb(12, 12, 37);
+    --br: 1px solid rgba(98, 98, 98, 0.3);
+    --bs: 0 10px 30px rgba(0,0,0,0.35);
+    --bg-2: rgb(19, 19, 41);
+    --bg-3: rgb(28, 28, 49);
+    --ff: 'Inter';
+    --hv: rgb(194, 194, 194);
+    --sc: rgb(175, 175, 175);
+}
+.to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+    color: white;
+    background-color: var(--bg-2);
+    border: var(--br);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,.3);
+    transition: opacity .3s ease, transform .3s ease;
+}
+
+.to-top:hover {
+    transform: scale(1.1);
+}
+.card{
+    background-color: var(--bg-2);
+    border-radius: 20px;
+    border: var(--br);
+    box-shadow: var(--bs);
+}
+.card1{
+    background-color: var(--bg-3);
+    border-radius: 20px;
+    border: var(--br);
+    box-shadow: var(--bs);
+    padding: 1vw;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--bg);
+}
+header{
+    border-bottom: var(--br);
+    backdrop-filter: blur(15px);
+    height: 75px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+h1{
+    font-size: clamp(20px, 1rem + 2vw, 30px);
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 200px;
+    margin-left: 2.5vw;
+    font-family: var(--ff);
+}
+h3{
+    scroll-margin-top: 80px;
+}
+.glav{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+.glav:hover{
+    color: var(--hv);
+}
+.nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+}
+.ssylka{
+    text-decoration: none;
+    color: white;
+    font-size: clamp(15px, 1.3vw, 25px);
+    display: inline-block;
+    flex: 0 0 auto;
+}
+.ssylka::after{
+    content: "";
+    bottom: -1px;
+    width: 0;
+    height: 1px;
+    background: white;
+    transition: width 0.3s ease;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.ssylka:hover::after{
+    width: 100%;
+}
+#ns::after{
+    width: 100%;
+}
+.h1{
+    display: flex;
+    align-items: center;
+}
+.git{
+    display: flex;
+    align-items: center;
+    gap: 8%;
+    margin-right: 3%;
+    border: 0.2px solid rgb(149, 149, 149);
+    border-radius: 20px;
+    padding: 0.7% 1% 0.7% 0.7%;
+    cursor: pointer;
+    color: white;
+    font-size: clamp(10px, 1vw, 20px);
+    font-family: var(--ff);
+    font-weight: 300;
+    text-decoration: none;
+}
+.git:hover{
+    background: rgba(0,0,0,0.25);
+}
+.github{
+    width: clamp(13px, 1.4vw, 25px);
+}
+main{
+    background: radial-gradient(circle at center top, rgba(255,255,255,0.2), transparent 10%);
+    padding-top: 115px;
+}
+.a1{
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+.a2{
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 5vw;
+    display: flex;
+    gap: 1.5vw;
+}
+h2{
+    font-family: var(--ff);
+    font-size: 55px;
+    color: white;
+}
+.obsh{
+    color: var(--sc);
+    font-size: clamp(10px, 2vw, 20px);
+    font-family: var(--ff);
+    width: 50vw;
+    margin-top: 2vw;
+    line-height: 1.6;
+}
+.soderh{
+    color: white;
+    font-family: var(--ff);
+    font-size: clamp(13px, 1.3vw, 20px);
+}
+.razdel{
+    color: var(--sc);
+    text-decoration: none;
+    font-family: var(--ff);
+    border-radius: 20px;
+    padding: 1vw;
+    font-size: clamp(11px, 1.2vw, 20px);
+}
+.razdel:hover{
+    background-color: var(--bg-3);
+}
+#rcard{
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+    width: 15vw;
+    height: fit-content;
+    min-width: 130px;
+    gap: 0.7vw;
+    position: sticky;
+    top: 80px;
+}
+#osn{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    padding: 3vw 5vw 3vw 5vw;
+    width: 65%;
+}
+.zagolovok{
+    color: white;
+    font-family: var(--ff);
+    font-size: clamp(11px, 2.5vw, 50px);
+}
+.abzac{
+    font-size: 18px;
+    color: white;
+    font-family: var(--ff);
+    line-height: 1.6;
+}
+#curs{
+    font-style: italic;
+}
+.tigr{
+    width: 90%;
+    border-radius: 20px;
+}
+#etika{
+    white-space: pre-line;
+}
