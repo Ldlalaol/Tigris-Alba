@@ -152,6 +152,7 @@ h2{
 }
 main{
     padding-top: 75px;
+    top: 0;
     background: radial-gradient(circle at center top, rgba(255,255,255,0.2), transparent 20%);
 }
 .txt{
@@ -667,6 +668,7 @@ footer{
     font-family: 'Inter';
     margin-left: 4vw;
 }
+
 
 
 
