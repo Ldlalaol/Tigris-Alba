@@ -37,6 +37,7 @@
 }
 body{
     background-color: rgb(12, 12, 37);
+    margin-top: 0;
 }
 header{
     background: rgba(0,0,0,0.2);
@@ -659,4 +660,5 @@ footer{
     font-family: 'Inter';
     margin-left: 4vw;
 }
+
 
