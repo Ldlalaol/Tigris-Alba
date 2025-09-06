@@ -48,6 +48,7 @@ header{
     position: fixed;
     width: 100%;
     z-index: 100;
+    margin-top: 0;
 }
 h1{
     font-size: clamp(20px, 1rem + 2vw, 30px);
@@ -658,3 +659,4 @@ footer{
     font-family: 'Inter';
     margin-left: 4vw;
 }
+
